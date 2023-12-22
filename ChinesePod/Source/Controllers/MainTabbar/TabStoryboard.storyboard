@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Playlists-->
+        <scene sceneID="Qsb-A1-raq">
+            <objects>
+                <viewController id="6bB-G1-xkV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="clD-7s-sDE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="s7h-PK-p80"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Playlists" image="icon_courses" selectedImage="icon_courses" id="qKe-f7-OJc">
+                        <color key="badgeColor" red="0.82745098039999998" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PTS-dT-NuZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="767" y="863"/>
+        </scene>
+        <!--Lessons-->
+        <scene sceneID="A2Y-Sf-NVL">
+            <objects>
+                <viewController id="Ka6-4e-tow" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gn3-Aj-tdz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Scp-YQ-Z91"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Lessons" image="icon_lessons" selectedImage="icon_lessons" id="D8L-hK-NuX">
+                        <color key="badgeColor" name="Theme_red"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sJf-98-ecH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1672" y="310"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="O2L-da-Rk5">
+            <objects>
+                <viewController storyboardIdentifier="AccountViewController" id="Pqq-os-VLa" customClass="AccountViewController" customModule="ChinesePod" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="te4-Oy-wn3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="zPY-OY-b6o"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Login" image="menu_account" selectedImage="menu_account" id="AGy-3w-psN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JqH-MT-t5F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="767" y="-706"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="tUG-NZ-0cN">
+            <objects>
+                <viewController id="opD-wP-UQr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4i7-D7-m7x">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="labeled-logo" translatesAutoresizingMaskIntoConstraints="NO" id="h4g-NO-mnZ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="BsP-hA-h45"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="QgH-xo-ds1">
+                                <rect key="frame" x="30" y="195" width="260" height="53"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G2p-v3-6st">
+                                        <rect key="frame" x="0.0" y="0.0" width="35" height="53"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lessons" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iH6-Jy-ATT">
+                                                <rect key="frame" x="0.0" y="38" width="35" height="15"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZ7-Hh-BxI">
+                                                <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                                <color key="backgroundColor" red="0.93725490196078431" green="0.37647058823529411" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="35" id="g43-TZ-Lno"/>
+                                                    <constraint firstAttribute="height" constant="35" id="qIB-ew-fR1"/>
+                                                </constraints>
+                                                <color key="tintColor" red="0.82745098039999998" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="icon_lessons">
+                                                    <color key="titleColor" red="0.93725490196078431" green="0.37647058823529411" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="vZ7-Hh-BxI" firstAttribute="top" secondItem="G2p-v3-6st" secondAttribute="top" id="0Ad-Uf-34K"/>
+                                            <constraint firstAttribute="bottom" secondItem="iH6-Jy-ATT" secondAttribute="bottom" id="7U3-9w-wCR"/>
+                                            <constraint firstItem="iH6-Jy-ATT" firstAttribute="leading" secondItem="G2p-v3-6st" secondAttribute="leading" id="B9t-nJ-00k"/>
+                                            <constraint firstAttribute="height" constant="53" id="IKN-kx-bJc"/>
+                                            <constraint firstAttribute="trailing" secondItem="iH6-Jy-ATT" secondAttribute="trailing" id="Nt5-j9-syY"/>
+                                            <constraint firstItem="iH6-Jy-ATT" firstAttribute="top" secondItem="vZ7-Hh-BxI" secondAttribute="bottom" constant="3" id="Tcf-u9-WP4"/>
+                                            <constraint firstAttribute="width" constant="35" id="gMW-Ej-kle"/>
+                                            <constraint firstAttribute="trailing" secondItem="vZ7-Hh-BxI" secondAttribute="trailing" id="ucB-e1-fRb"/>
+                                            <constraint firstItem="vZ7-Hh-BxI" firstAttribute="leading" secondItem="G2p-v3-6st" secondAttribute="leading" id="udj-qj-gB1"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LsV-mc-re9">
+                                        <rect key="frame" x="75" y="0.0" width="35" height="53"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Playlists" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YSq-9q-ebj">
+                                                <rect key="frame" x="0.0" y="38" width="35" height="15"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwZ-eq-7Qb">
+                                                <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                                <color key="backgroundColor" red="0.91764705882352937" green="0.50196078431372548" blue="0.011764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="Bl1-Fa-QiC"/>
+                                                    <constraint firstAttribute="width" constant="35" id="Dz8-pu-Ajf"/>
+                                                </constraints>
+                                                <color key="tintColor" red="0.82745098039999998" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="icon_courses">
+                                                    <color key="titleColor" red="0.91764705882352937" green="0.50196078431372548" blue="0.011764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="bwZ-eq-7Qb" secondAttribute="trailing" id="AVx-zS-NBM"/>
+                                            <constraint firstItem="YSq-9q-ebj" firstAttribute="leading" secondItem="LsV-mc-re9" secondAttribute="leading" id="DVc-Sx-0Xm"/>
+                                            <constraint firstAttribute="height" constant="53" id="Fz4-fI-sKc"/>
+                                            <constraint firstAttribute="bottom" secondItem="YSq-9q-ebj" secondAttribute="bottom" id="JGS-e9-nAy"/>
+                                            <constraint firstItem="YSq-9q-ebj" firstAttribute="top" secondItem="bwZ-eq-7Qb" secondAttribute="bottom" constant="3" id="JvK-uP-ZxJ"/>
+                                            <constraint firstItem="bwZ-eq-7Qb" firstAttribute="leading" secondItem="LsV-mc-re9" secondAttribute="leading" id="d65-pi-bOY"/>
+                                            <constraint firstAttribute="trailing" secondItem="YSq-9q-ebj" secondAttribute="trailing" id="eIt-Xm-qbE"/>
+                                            <constraint firstAttribute="width" constant="35" id="gbq-VU-1HV"/>
+                                            <constraint firstItem="bwZ-eq-7Qb" firstAttribute="top" secondItem="LsV-mc-re9" secondAttribute="top" id="vHy-ah-zmN"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g7T-dR-aMp">
+                                        <rect key="frame" x="150" y="0.0" width="35" height="53"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flashcards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSu-1c-ypn">
+                                                <rect key="frame" x="0.0" y="38" width="35" height="15"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dpx-aU-xzp">
+                                                <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                                <color key="backgroundColor" red="0.0" green="0.75686274509803919" blue="0.73725490196078436" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="35" id="a2s-b5-CY6"/>
+                                                    <constraint firstAttribute="height" constant="35" id="gOv-Ry-v52"/>
+                                                </constraints>
+                                                <color key="tintColor" red="0.82745098039999998" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="icon_lessons">
+                                                    <color key="titleColor" red="0.82745098039999998" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Dpx-aU-xzp" firstAttribute="top" secondItem="g7T-dR-aMp" secondAttribute="top" id="4TP-tH-OYg"/>
+                                            <constraint firstItem="LSu-1c-ypn" firstAttribute="top" secondItem="Dpx-aU-xzp" secondAttribute="bottom" constant="3" id="Fq4-de-atq"/>
+                                            <constraint firstAttribute="height" constant="53" id="HuY-bS-epA"/>
+                                            <constraint firstAttribute="width" constant="35" id="fH8-Mz-Lvr"/>
+                                            <constraint firstItem="Dpx-aU-xzp" firstAttribute="leading" secondItem="g7T-dR-aMp" secondAttribute="leading" id="l4g-it-NHC"/>
+                                            <constraint firstAttribute="trailing" secondItem="Dpx-aU-xzp" secondAttribute="trailing" id="nau-Jb-ARz"/>
+                                            <constraint firstItem="LSu-1c-ypn" firstAttribute="leading" secondItem="g7T-dR-aMp" secondAttribute="leading" id="rLP-fp-wja"/>
+                                            <constraint firstAttribute="bottom" secondItem="LSu-1c-ypn" secondAttribute="bottom" id="wYj-jT-r6e"/>
+                                            <constraint firstAttribute="trailing" secondItem="LSu-1c-ypn" secondAttribute="trailing" id="wtA-mc-CUk"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bk0-pB-3sS">
+                                        <rect key="frame" x="225" y="0.0" width="35" height="53"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dictionary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7m-gi-w4A">
+                                                <rect key="frame" x="0.0" y="38" width="35" height="15"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKP-h6-HVX">
+                                                <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                                <color key="backgroundColor" red="0.22352941176470587" green="0.74901960784313726" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="35" id="9kz-34-w5Q"/>
+                                                    <constraint firstAttribute="height" constant="35" id="VDV-zX-lrS"/>
+                                                </constraints>
+                                                <color key="tintColor" red="0.82745098039999998" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="icon_lessons">
+                                                    <color key="titleColor" red="0.82745098039999998" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="F7m-gi-w4A" secondAttribute="trailing" id="7mb-5X-BCb"/>
+                                            <constraint firstAttribute="height" constant="53" id="A6z-Lu-7bg"/>
+                                            <constraint firstItem="F7m-gi-w4A" firstAttribute="leading" secondItem="bk0-pB-3sS" secondAttribute="leading" id="EIa-3f-ZdN"/>
+                                            <constraint firstItem="NKP-h6-HVX" firstAttribute="leading" secondItem="bk0-pB-3sS" secondAttribute="leading" id="Fma-vs-TPP"/>
+                                            <constraint firstItem="NKP-h6-HVX" firstAttribute="top" secondItem="bk0-pB-3sS" secondAttribute="top" id="Wr6-a9-cmo"/>
+                                            <constraint firstAttribute="bottom" secondItem="F7m-gi-w4A" secondAttribute="bottom" id="XLy-Ar-GgP"/>
+                                            <constraint firstItem="F7m-gi-w4A" firstAttribute="top" secondItem="NKP-h6-HVX" secondAttribute="bottom" constant="3" id="iaP-IO-R2f"/>
+                                            <constraint firstAttribute="width" constant="35" id="lLV-9l-wwM"/>
+                                            <constraint firstAttribute="trailing" secondItem="NKP-h6-HVX" secondAttribute="trailing" id="pD0-Kr-qfn"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rUp-he-3qi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QgH-xo-ds1" firstAttribute="centerX" secondItem="4i7-D7-m7x" secondAttribute="centerX" id="0nV-Pf-U0n"/>
+                            <constraint firstItem="h4g-NO-mnZ" firstAttribute="trailing" secondItem="rUp-he-3qi" secondAttribute="trailing" id="De4-XI-AMV"/>
+                            <constraint firstItem="h4g-NO-mnZ" firstAttribute="top" secondItem="4i7-D7-m7x" secondAttribute="top" id="bFz-Wa-Eei"/>
+                            <constraint firstItem="h4g-NO-mnZ" firstAttribute="leading" secondItem="rUp-he-3qi" secondAttribute="leading" id="dNw-du-f3M"/>
+                            <constraint firstItem="QgH-xo-ds1" firstAttribute="top" secondItem="h4g-NO-mnZ" secondAttribute="bottom" constant="15" id="qhM-pD-X2z"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="menu_home" selectedImage="menu_home" id="kMO-hx-VRr">
+                        <color key="badgeColor" name="Theme_red"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qyw-6Y-C3s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1670.625" y="-407.74647887323943"/>
+        </scene>
+        <!--Main Tabbar Controller-->
+        <scene sceneID="VQZ-kw-3dA">
+            <objects>
+                <tabBarController storyboardIdentifier="MainTabbarController" id="RKq-E3-IPv" customClass="MainTabbarController" customModule="ChinesePod" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backgroundImage="menu_home" id="rS4-1X-2E3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="opD-wP-UQr" kind="relationship" relationship="viewControllers" id="fvM-Uw-8gj"/>
+                        <segue destination="Ka6-4e-tow" kind="relationship" relationship="viewControllers" id="U8X-rs-3z5"/>
+                        <segue destination="6bB-G1-xkV" kind="relationship" relationship="viewControllers" id="vDg-GR-TC5"/>
+                        <segue destination="Pqq-os-VLa" kind="relationship" relationship="viewControllers" id="o3H-ZS-UoC"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wtj-A4-kew" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="768" y="7"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_courses" width="24" height="22"/>
+        <image name="icon_lessons" width="24" height="18"/>
+        <image name="labeled-logo" width="240" height="44"/>
+        <image name="menu_account" width="24" height="28.5"/>
+        <image name="menu_home" width="24" height="26"/>
+        <namedColor name="Theme_red">
+            <color red="0.82700002193450928" green="0.18400000035762787" blue="0.18400000035762787" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

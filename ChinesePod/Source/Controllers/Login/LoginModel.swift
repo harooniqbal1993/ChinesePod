@@ -25,6 +25,7 @@ struct LoginRequestModel: Encodable {
 struct LoginResponseModel: Decodable {
     var success: Int? = 0
     var data: LoginData? = nil
+    var error: Int? = 0
 }
 
 struct LoginData: Decodable {

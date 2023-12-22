@@ -26,8 +26,13 @@ class LoginViewModel {
             emailError = "Required"
             proceed = false
         } else {
-            emailError = nil
-            proceed = true
+            if email?.isValidEmail ?? false {
+                emailError = nil
+                proceed = true
+            } else {
+                emailError = "Invalid email"
+                proceed = false
+            }
         }
         
         if password == nil || password?.isEmpty ?? false {
@@ -63,6 +68,11 @@ class LoginViewModel {
 //            print(result)
             if let error = error {
                 completion(false, error)
+                return
+            }
+            
+            if result?.success == 0 {
+                completion(false, "Your email or password is incorrect")
                 return
             }
             completion(true, error)

@@ -127,6 +127,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginButtonTapped(_ sender: UIButton) {
+        view.startLoading()
         loginViewModel?.email = emailTextField.text
         loginViewModel?.password = passwordTextField.text
         loginViewModel?.validate()
@@ -145,6 +146,7 @@ class LoginViewController: UIViewController {
                     if let error = error {
                         self.showAlert(title: "Validation", message: error)
                     }
+                    self.view.stopLoading()
                 }
             }
         } else {
@@ -165,6 +167,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func skipButtonTapped(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
     }
     
     @IBAction func forgotPasswordTapped(_ sender: UIButton) {

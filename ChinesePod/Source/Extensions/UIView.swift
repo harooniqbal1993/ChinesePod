@@ -135,4 +135,17 @@ extension UIView {
 //        imageView.center = self.center
         self.insertSubview(imageView, at: 0)
     }
+    
+    func startLoading() {
+        let loadingView: UIImageView = UIImageView(frame: CGRect(x: self.frame.size.width/2 - 20, y: self.frame.size.height/2 - 20, width: 40, height: 40))
+        loadingView.image = CachedAssets.preloader
+        self.addSubview(loadingView)
+        loadingView.tag = 100
+    }
+    
+    func stopLoading() {
+        if let loadingView = self.viewWithTag(100) {
+            loadingView.removeFromSuperview()
+        }
+    }
 }
