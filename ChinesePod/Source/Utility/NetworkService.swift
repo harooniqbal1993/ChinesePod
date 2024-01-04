@@ -30,11 +30,12 @@ class NetworkService {
         }
     }
     
-//    func dashboard(completion: @escaping (_ result: HomeModel?, _ error: String?) -> Void) {
-//        let url = "\(baseURL+Constants.EndPoints.dashboard.rawValue)?driverId=\(DriverSession.shared.driver?.id ?? 1125)"
-//        httpUtility.getApiData(url: URL(string: url)!, resultType: HomeModel.self) { result, error in
-//            completion(result, error)
-//        }
-//    }
+    func getLessons(completion: @escaping (_ result: String?, _ error: String?) -> Void) { // page, count
+        var url = RestAPI.GetFullUrl(RestAPI.FETCH_LATEST_LESSONS_API_1_0_0, version: "1.0.0")
+        url = url + "?count=10&page=1&sessionid=ca1420bb940bc7534b1c4d6f24d2555a6414eb68c4d272fa3c1fe26659facbd83e" // + (Defaults.authToken ?? "")
+        httpUtility.getApiData(url: URL(string: url)!, resultType: String.self) { result, error in
+            completion(result, error)
+        }
+    }
  
 }

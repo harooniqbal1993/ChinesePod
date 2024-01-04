@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CoursePageCell" id="gTV-IL-0wX" customClass="CoursePageCell" customModule="ChinesePod" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="399" height="419"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="399" height="419"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="NX8-Eq-Gx0">
+                        <rect key="frame" x="0.0" y="0.0" width="399" height="419"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="R3S-gB-P3r">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UCx-rG-axr">
+                        <rect key="frame" x="178.66666666666666" y="199" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="UCx-rG-axr" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="2hj-3y-HHa"/>
+                <constraint firstItem="NX8-Eq-Gx0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Lw2-Wi-72o"/>
+                <constraint firstAttribute="bottom" secondItem="NX8-Eq-Gx0" secondAttribute="bottom" id="O4L-MF-76X"/>
+                <constraint firstAttribute="trailing" secondItem="NX8-Eq-Gx0" secondAttribute="trailing" id="WlJ-kW-MKF"/>
+                <constraint firstItem="NX8-Eq-Gx0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="aJc-Tn-mhL"/>
+                <constraint firstItem="UCx-rG-axr" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="hZb-i8-mOK"/>
+            </constraints>
+            <size key="customSize" width="399" height="419"/>
+            <connections>
+                <outlet property="courseCollectionView" destination="NX8-Eq-Gx0" id="Nmq-u2-v0r"/>
+                <outlet property="label" destination="UCx-rG-axr" id="AMp-vT-FLb"/>
+            </connections>
+            <point key="canvasLocation" x="390.07633587786256" y="149.64788732394368"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

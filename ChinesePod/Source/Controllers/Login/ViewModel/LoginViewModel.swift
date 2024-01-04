@@ -75,6 +75,8 @@ class LoginViewModel {
                 completion(false, "Your email or password is incorrect")
                 return
             }
+            Defaults.authToken = result?.data?.sessionid
+            Defaults.isLoggedIn = true
             completion(true, error)
         }
     }

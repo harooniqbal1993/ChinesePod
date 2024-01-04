@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="295" id="KGk-i7-Jjw" customClass="LessonCell" customModule="ChinesePod" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="396" height="295"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="396" height="295"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turndown Service" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nPA-ZG-uns">
+                        <rect key="frame" x="20" y="12" width="356" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="Fxe-ZX-6vT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pre-Intermediate | Premium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yc4-Vr-FCW">
+                        <rect key="frame" x="20" y="29" width="356" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="q9E-Nb-7th"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy" translatesAutoresizingMaskIntoConstraints="NO" id="rhl-71-XLK">
+                        <rect key="frame" x="0.0" y="57" width="396" height="175"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="175" id="Sr2-Cr-iOf"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="DpJ-qS-tHs">
+                        <rect key="frame" x="0.0" y="247" width="132" height="44"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Mz-gl-98K">
+                                <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="d6T-lz-hWH"/>
+                                    <constraint firstAttribute="height" constant="44" id="wDv-P0-mZE"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="bookmark" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9A0-IL-ZZR">
+                                <rect key="frame" x="44" y="0.0" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="1Te-3l-PpP"/>
+                                    <constraint firstAttribute="width" constant="44" id="gUH-ir-Dmn"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="book" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZsC-6S-sUP">
+                                <rect key="frame" x="88" y="0.0" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="3nt-87-mcq"/>
+                                    <constraint firstAttribute="height" constant="44" id="jUh-Jj-tRy"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="arrow.down.circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                </state>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="nPA-ZG-uns" secondAttribute="trailing" constant="20" symbolic="YES" id="9K4-t0-VUv"/>
+                    <constraint firstItem="rhl-71-XLK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Fom-Pk-cFa"/>
+                    <constraint firstItem="DpJ-qS-tHs" firstAttribute="top" secondItem="rhl-71-XLK" secondAttribute="bottom" constant="15" id="GTq-Ht-b3a"/>
+                    <constraint firstAttribute="trailing" secondItem="Yc4-Vr-FCW" secondAttribute="trailing" constant="20" symbolic="YES" id="OiU-jC-rT6"/>
+                    <constraint firstItem="nPA-ZG-uns" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="QGH-z1-dki"/>
+                    <constraint firstItem="nPA-ZG-uns" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="QkH-bW-hng"/>
+                    <constraint firstItem="Yc4-Vr-FCW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="cuW-ao-GfP"/>
+                    <constraint firstAttribute="trailing" secondItem="rhl-71-XLK" secondAttribute="trailing" id="gnF-7X-RSz"/>
+                    <constraint firstItem="DpJ-qS-tHs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="jCJ-Gs-akr"/>
+                    <constraint firstItem="rhl-71-XLK" firstAttribute="top" secondItem="Yc4-Vr-FCW" secondAttribute="bottom" constant="15" id="oy3-Oe-gBJ"/>
+                    <constraint firstItem="Yc4-Vr-FCW" firstAttribute="top" secondItem="nPA-ZG-uns" secondAttribute="bottom" constant="2" id="qe4-ln-h2U"/>
+                    <constraint firstAttribute="bottom" secondItem="DpJ-qS-tHs" secondAttribute="bottom" constant="10" id="w5W-aH-GcD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="-56" y="91"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow.down.circle" catalog="system" width="128" height="123"/>
+        <image name="book" catalog="system" width="128" height="99"/>
+        <image name="bookmark" catalog="system" width="110" height="128"/>
+        <image name="dummy" width="664" height="376"/>
+    </resources>
+</document>
